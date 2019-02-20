@@ -1,12 +1,14 @@
 /*==================================
 Fonts: Museo Sans
 ==================================*/
+
 @import url("https://use.typekit.net/wma8isk.css");
 
 
 /*==================================
 Base Styles
 ==================================*/
+
 body, html {
   font-family: museo-sans, sans-serif;
   font-style: normal;
@@ -16,20 +18,38 @@ p {
   font-weight: 300;
 }
 
+.top-bar-right ul li {
+  padding-bottom: 5px;
+}
+
+.nav-active {
+  border-bottom: 2px solid #f7b731;
+}
+
+.hero-search-filter h2 {
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 .button {
-  background-color: #34495e !important;
+  background-color: #34495e;
 }
 
 .learn-more-button {
   display: block;
   margin: 25px auto 50px auto;
-
 }
 
-.button:hover,
-a:hover {
-  opacity: 0.8;
-  transition: 0.2s ease;
+.more-button {
+  display: block;
+  margin: 25px auto;
+  padding: 12px 50px;
+}
+
+.button:hover {
+  background-color: #f7b731;
 }
 
 .headline-text {
@@ -58,9 +78,31 @@ a:hover {
 }
 
 .container a:hover {
-  color: #20bf6b;
+  color: #f7b731;
   transition: 0.2s ease;
 }
+
+.footer-flex {
+  background-color: #34495e;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 0;
+}
+
+.footer-flex a,
+.footer-flex li i {
+  color: #fefefe;
+}
+
+.footer-flex li i {
+  font-size: 1.5rem;
+}
+
+
+
+/*==================================
+Home Page Styles
+==================================*/
 
 .flex-step {
   display: flex;
@@ -92,30 +134,49 @@ a:hover {
   font-weight: 700;
 }
 
-.footer-flex {
-  background-color: #34495e;
+
+
+/*==================================
+FAQ Styles
+==================================*/
+
+.faq-item {
+  border-bottom: 1px solid #dfe6e9;
+  color: #34495e;
   display: flex;
-  justify-content: space-evenly;
-  padding: 35px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70px;
+  width: 100%;
 }
 
-.footer-flex a,
-.footer-flex li i {
-  color: #fefefe;
+.faq-item:hover {
+  cursor: pointer;
 }
 
-.footer-flex li i {
-  font-size: 1.5rem;
+.faq-item:hover a {
+  color: #34495e;
+  font-size: 1.15rem;
+  opacity: 1;
+  transition: 0.2s ease;
 }
 
+.faq-item:nth-child(1) {
+  border-top: 1px solid #dfe6e9;
+}
 
 
 /*==================================
 Responsive Navbar
 ==================================*/
+
 .topbar-responsive {
   background: #34495e;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25) !important;
   padding: 1rem 1.5rem;
+  /* z-index: 1000; */
 }
 
 .topbar-responsive .topbar-responsive-logo {
@@ -228,6 +289,7 @@ Responsive Navbar
 /*==================================
 Domain Name Search
 ==================================*/
+
 .hero-search-filter {
   background: url("../assets/web-hero-2.jpg") center center no-repeat;
   height: 300px;
@@ -342,6 +404,36 @@ Domain Name Search
 .hero-search-filter-form-near:focus {
   border: 0;
   box-shadow: none;
+}
+
+
+
+/*==================================
+FAQ Category Toggle
+==================================*/
+
+.mobile-app-filter-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: distribute;
+          justify-content: space-evenly;
+  margin: 0;
+  height: 2.8125rem;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #dfe6e9;
+}
+
+.mobile-app-filter-menu li a {
+  color: #b2bec3;
+}
+
+.mobile-app-filter-menu li.is-active a {
+  color: #34495e;
 }
 
 

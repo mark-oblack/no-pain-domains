@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>No Pain Domains | Home</title>
+    <title>No Pain Domains | FAQs</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -20,21 +20,22 @@
         </div>
         <div id="topbar-responsive" class="topbar-responsive-links">
             <div class="top-bar-right">
-            <ul class="menu simple vertical medium-horizontal">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Getting Started</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Resources</a></li>
-                <!-- <li>
-                    <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-                </li> -->
-            </ul>
+                <ul class="menu simple vertical medium-horizontal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li class="nav-active"><a href="faqs.html">FAQs</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <!-- <li>
+                        <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+                    </li> -->
+                </ul>
             </div>
         </div>
     </nav>
     <div class="hero-search-filter">
         <div class="hero-search-filter-content">
-            <h1 class="headline-text">Find Your Domain Name</h1>
+            <h1 class="headline-text">FAQs</h1>
+            <h2>Find the answers you're looking for.</h2>
             <form class="hero-search-filter-form" action="">
                 <label for="findtext">Search</label>
                 <input id="findtext" class="hero-search-filter-form-find" type="text" />
@@ -42,38 +43,29 @@
             </form>
         </div>
     </div>
-    <div class="container">
-        <h2 class="subheadline-text">Getting Started with Domains</h2>
-        <p>New to the domain name game? Check out our steps below for getting started with obtaining a domain name and setting up your website!</p>
-        <div class="flex-step">
-            <div class="step-container">
-                <p>1</p>
+    <div>
+        <h2 class="subheadline-text">Categories</h2>
+        <ul class="mobile-app-filter-menu" data-mobile-app-filter-menu>
+            <li class="is-active"><a href="#">Domains</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+        <div class="faqs">
+            <div class="faq-item">
+                <a href="#">How do I assign a domain?</a>
             </div>
-            <p>Brainstorm and Come Prepared</p>
-        </div>
-        <p>Have a computer, credit card, and some domain name ideas in mind. Be aware that the domain name you want to purchase may already be taken, so it is helpful to have some alternative choices.</p>
-        <div class="flex-step">
-            <div class="step-container">
-                <p>2</p>
+            <div class="faq-item">
+                <a href="#">How do I register a new domain name</a>
             </div>
-            <p>Search for Your Domain</p>
-        </div>
-        <p>No Pain Domains offers visitors the option to check the availability on a domain name. While there are many suffixes (also known as top level domains) to choose from, such as .com, .net, or .org, most people select a domain name with the .com suffix. To learn more about the different suffixes, visit our Resource Center.</p>
-        <div class="flex-step">
-            <div class="step-container">
-                <p>3</p>
+            <div class="faq-item">
+                <a href="#">How do I transfer my domain name to a new web host service?</a>
             </div>
-            <p>Purchase Your Domain Name</p>
-        </div>
-        <p>Once you find a domain name you would like to purhcase, visit <a href="https://www.namecheap.com/" target="_blank">Namecheap.com</a> to complete your transaction. During your transaction, avoid adding unnecessary add-ons to your purchase (such as WhoIsGuard).</p>
-        <div class="flex-step">
-            <div class="step-container">
-                <p>4</p>
+            <div class="faq-item">
+                <a href="#">How do I change a DNS record?</a>
             </div>
-            <p>Connect to a Hosting Service</p>
         </div>
-        <p>After you purchase your domain name, you will want to connect it to a web hosting service (these make your website accessible over the Internet). Common web hosting services include <a href="https://www.namecheap.com" target="_blank">Namecheap</a>, <a href="https://www.bluehost.com/" target="_blank">Bluehost</a>, and <a href="https://www.hostgator.com/" target="_blank">HostGator</a>.</p>
-        <button class="button learn-more-button">Learn More</button>
+        <button class="button more-button">More</button>
     </div>
     <footer class="footer-flex">
         <ul class="menu simple horizontal">
@@ -92,5 +84,11 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        $('[data-mobile-app-filter-menu] li').click(function () {
+            $(this).siblings().removeClass('is-active');
+            $(this).addClass('is-active');
+        });
+    </script>
 </body>
 </html>
