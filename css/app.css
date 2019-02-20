@@ -229,7 +229,7 @@ Responsive Navbar
 Domain Name Search
 ==================================*/
 .hero-search-filter {
-  background: url("/assets/web-hero-2.jpg") center center no-repeat;
+  background: url("../assets/web-hero-2.jpg") center center no-repeat;
   height: 300px;
   background-size: cover;
   display: -webkit-flex;
