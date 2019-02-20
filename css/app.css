@@ -63,7 +63,7 @@ p {
   color: #34495e;
   font-size: 2rem;
   font-weight: 500;
-  margin: 10px 0;
+  margin: 25px 0;
   text-align: center;
 }
 
@@ -140,7 +140,7 @@ Home Page Styles
 FAQ Styles
 ==================================*/
 
-.faq-item {
+.item {
   border-bottom: 1px solid #dfe6e9;
   color: #34495e;
   display: flex;
@@ -152,18 +152,18 @@ FAQ Styles
   width: 100%;
 }
 
-.faq-item:hover {
+.item:hover {
   cursor: pointer;
 }
 
-.faq-item:hover a {
+.item:hover a {
   color: #34495e;
   font-size: 1.15rem;
   opacity: 1;
   transition: 0.2s ease;
 }
 
-.faq-item:nth-child(1) {
+.item:nth-child(1) {
   border-top: 1px solid #dfe6e9;
 }
 
