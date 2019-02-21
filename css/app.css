@@ -308,10 +308,25 @@ Responsive Navbar
 Domain Name Search
 ==================================*/
 
-.hero-search-filter {
+#domain-search {
   background: url("../assets/web-hero-2.jpg") center center no-repeat;
   height: 300px;
   background-size: cover;
+}
+
+#faq-search {
+  background: url("../assets/web-hero.jpg") center center no-repeat;
+  height: 300px;
+  background-size: cover;
+}
+
+#resources-search {
+  background: url("../assets/resources-hero.jpg") center center no-repeat;
+  height: 300px;
+  background-size: cover;
+}
+
+.hero-search-filter {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -455,4 +470,50 @@ FAQ Category Toggle
 }
 
 
-  
+
+/*==================================
+Resources Pagination
+==================================*/
+
+.pagination-circular {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.pagination-circular li {
+  margin: 0 2.5px;
+}
+
+.pagination-circular li.current {
+  background-color: #34495e;
+  border: 1px solid #34495e;
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+  font-size: 18px;
+}
+
+.pagination-circular li.disabled {
+  border: 1px solid #cacaca;
+  padding: 0.285em 0.8em;
+  border-radius: 5000px;
+  font-size: 18px;
+}
+
+.pagination-circular a {
+  border-radius: 5000px;
+  color: #34495e;
+  padding: 0.285em 0.8em;
+  border: 1px solid #34495e;
+  font-size: 18px;
+}
+
+.pagination-circular li:not(.disabled):hover a {
+  background: #1779ba;
+  color: #fefefe;
+}
+
+.pagination-circular li a {
+  transition: background 0.15s ease-in, color 0.15s ease-in;
+}
+
