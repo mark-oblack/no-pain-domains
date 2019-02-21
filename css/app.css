@@ -181,6 +181,9 @@ Responsive Navbar
 
 .topbar-responsive .topbar-responsive-logo {
   color: #fefefe;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-bottom: 5px;
   vertical-align: middle;
 }
 
