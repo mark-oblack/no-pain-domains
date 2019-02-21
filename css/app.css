@@ -85,8 +85,13 @@ p {
 .footer-flex {
   background-color: #34495e;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   padding: 35px 0;
+}
+
+.footer-flex ul:nth-child(1) {
+  margin-bottom: 25px;
 }
 
 .footer-flex a,
@@ -98,6 +103,16 @@ p {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 601px) {
+  .footer-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .footer-flex ul:nth-child(1) {
+    margin-bottom: 0px;
+  }
+}
 
 
 /*==================================
